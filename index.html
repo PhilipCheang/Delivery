@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="/src/img/logo-1.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/src/img/logo-1.jpg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
@@ -20,10 +20,14 @@
     <title>Jacqui Cleaner</title>
   </head>
   <body>
-    <header class ="header">
+    <header class="header">
       <nav class="nav">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
         <img
-        src="/src/img/logo-1.png"
+          src="/src/img/logo-1.jpg"
           alt="Jacqui logo"
           class="nav__logo"
           id="logo"
@@ -47,88 +51,112 @@
           </li>
         </ul>
       </nav>
+        <div class="header__title">
+          <h1>
+            Dry
+            <!-- Green highlight effect -->
+            <span class="highlight">cleaning</span>
 
-      <div class="header__title">
-        <h1>
-          Dry
-          <!-- Green highlight effect -->
-          <span class="highlight">cleaning</span>
-          made<br />
-          <span class="highlight">easy</span>
-        </h1>
-        <h4>Spend more time doing the things you love.</h4>
-        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
-        <img
+            made
+            <span class="highlight">easy</span>
+          </h1>
+          <h4>Spend more time doing the things you love.</h4>
+          <button class="btn--text btn--scroll-to">
+            Learn more &DownArrow;
+          </button>
+          <img
           src="/src/img/feature-lazy.jpg"
           data-src="/src/img/feature.jpg"
           class="header__img features__img lazy-img"
-          alt="Minimalist bank items"
-        />
-      </div>
-        </ul>
-      </nav>
+          alt="car"
+          />
+        </div>
     </header>
     <section class="section" id="section--1">
       <div class="section__title">
         <h2 class="section__description">Features</h2>
-        <h3 class="section__header">
-          Experts in the garment care industry.
-        </h3>
+        <h3 class="section__header">Experts in the garment care industry.</h3>
       </div>
 
       <div class="features">
-        <img
-          src="/src/img/store-front-lazy.jpg"
-          data-src="/src/img/store-front.jpg"
-          alt="Computer"
-          class="features__img lazy-img"
-        />
-        <div class="features__feature">
-          <div class="features__icon">
-            <svg>
-              <use xlink:href="/src/img/icons.svg#icon-monitor"></use>
-            </svg>
+        <div class="feature-1">
+          <div>
+            <img
+              src="/src/img/store-front-lazy.jpg"
+              data-src="/src/img/store-front.jpg"
+              alt="Computer"
+              class="features__img lazy-img"
+            />
           </div>
-          <h5 class="features__header">Family Owned & Operated</h5>
-          <p>
-            What sets us apart is more than just our expertise; it's the unity of purpose that stems from being family-owned and operated. Our shared dedication infuses every interaction with warmth and a personal touch. When you trust your fabrics to Jacqui Cleaner, you're not just a customer – you're an extension of our family, and your satisfaction is our proudest achievement.
-          </p>
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="/src/img/icons.svg#icon-monitor"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">Family Owned & Operated</h5>
+            <p>
+              What sets us apart is more than just our expertise; it's the unity
+              of purpose that stems from being family-owned and operated. Our
+              shared dedication infuses every interaction with warmth and a
+              personal touch. When you trust your fabrics to Jacqui Cleaner,
+              you're not just a customer – you're an extension of our family,
+              and your satisfaction is our proudest achievement.
+            </p>
+          </div>
         </div>
-
-        <div class="features__feature">
-          <div class="features__icon">
-            <svg>
-              <use xlink:href="/src/img/icons.svg#icon-trending-up"></use>
-            </svg>
+        <div class="feature-2">
+          <div>
+            <img
+              src="/src/img/equipment-lazy.jpg"
+              data-src="/src/img/equipment.jpg"
+              alt="Van"
+              class="features__img lazy-img"
+            />
           </div>
-          <h5 class="features__header">28 Years of Experience</h5>
-          <p>
-            Established since 1995, Jacqui Cleaner stands firm, upholding values that never go out of style: integrity, trust, and the time-honored traditions of a family committed to its craft. Experience the difference that a family touch can make – where impeccable service and a genuine love for fabrics come together, only at Jacqui Cleaner.
-          </p>
-        </div>
-        <img
-          src="/src/img/equipment-lazy.jpg"
-          data-src="/src/img/equipment.jpg"
-          alt="Van"
-          class="features__img lazy-img"
-        />
-
-        <img
-          src="/src/img/downtown-lazy.jpg"
-          data-src="/src/img/downtown.jpg"
-          alt="Credit card"
-          class="features__img lazy-img"
-        />
-        <div class="features__feature">
-          <div class="features__icon">
-            <svg>
-              <use xlink:href="/src/img/icons.svg#icon-credit-card"></use>
-            </svg>
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="/src/img/icons.svg#icon-trending-up"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">28 Years of Experience</h5>
+            <p>
+              Established since 1995, Jacqui Cleaner stands firm, upholding values
+              that never go out of style: integrity, trust, and the time-honored
+              traditions of a family committed to its craft. Experience the
+              difference that a family touch can make – where impeccable service
+              and a genuine love for fabrics come together, only at Jacqui
+              Cleaner.
+            </p>
           </div>
-          <h5 class="features__header">Friendly & Trustworthy</h5>
-          <p>
-            We treat our customers like family. Nestled in the heart of Humble, Texas. Jacqui Cleaner stands as a testament to the values passed down through our family's lineage. With meticulous attention to detail, we have honed our craft, perfecting techniques that not only restore your garments but also safeguard their memories. Whether it's a vintage wedding gown or a treasured everyday ensemble, we understand that each piece carries a story, and it's our privilege to play a part in its preservation.
-          </p>
+        <div class="feature-2">
+          <div>
+            <img
+              src="/src/img/downtown-lazy.jpg"
+              data-src="/src/img/downtown.jpg"
+              alt="Credit card"
+              class="features__img lazy-img"
+            />
+          </div>
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="/src/img/icons.svg#icon-credit-card"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">Friendly & Trustworthy</h5>
+            <p>
+              We treat our customers like family. Nestled in the heart of Humble,
+              Texas. Jacqui Cleaner stands as a testament to the values passed
+              down through our family's lineage. With meticulous attention to
+              detail, we have honed our craft, perfecting techniques that not only
+              restore your garments but also safeguard their memories. Whether
+              it's a vintage wedding gown or a treasured everyday ensemble, we
+              understand that each piece carries a story, and it's our privilege
+              to play a part in its preservation.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -137,7 +165,8 @@
       <div class="section__title">
         <h2 class="section__description">PICKUP & DELIVERY</h2>
         <h3 class="section__header">
-          Our team is highly skilled and is passionate about delivering high quality services
+          Our team is highly skilled and is passionate about delivering high
+          quality services
         </h3>
       </div>
 
@@ -164,12 +193,8 @@
               <use xlink:href="/src/img/icons.svg#icon-upload"></use>
             </svg>
           </div>
-          <h5 class="operations__header">
-            Sign up Today
-          </h5>
-          <p>
-            Register online to schedule a pickup.
-          </p>
+          <h5 class="operations__header">Sign up Today</h5>
+          <p>Register online to schedule a pickup.</p>
         </div>
 
         <div class="operations__content operations__content--2">
@@ -178,11 +203,10 @@
               <use xlink:href="/src/img/icons.svg#icon-home"></use>
             </svg>
           </div>
-          <h5 class="operations__header">
-            Receive Laundry Bag Free
-          </h5>
+          <h5 class="operations__header">Receive Laundry Bag Free</h5>
           <p>
-            Place clothes in your personalized laundry bag, or temporary bag, and leave your bag at your predetermined location.
+            Place clothes in your personalized laundry bag, or temporary bag,
+            and leave your bag at your predetermined location.
           </p>
         </div>
         <div class="operations__content operations__content--3">
@@ -191,11 +215,10 @@
               <use xlink:href="/src/img/icons.svg#icon-check-circle"></use>
             </svg>
           </div>
-          <h5 class="operations__header">
-            3 days
-          </h5>
+          <h5 class="operations__header">3 days</h5>
           <p>
-            We will leave your clean clothes on your front door or the location of you choice.
+            We will leave your clean clothes on your front door or the location
+            of you choice.
           </p>
         </div>
       </div>
@@ -204,9 +227,7 @@
     <section class="section" id="section--3">
       <div class="section__title section__title--testimonials">
         <h2 class="section__description">Not sure yet?</h2>
-        <h3 class="section__header">
-          Customers Feedback
-        </h3>
+        <h3 class="section__header">Customers Feedback</h3>
       </div>
 
       <div class="slider">
@@ -217,7 +238,11 @@
               Very friendly. Great service.
             </blockquote>
             <address class="testimonial__author">
-              <img src="/src/img/user-1.jpg" alt="" class="testimonial__photo" />
+              <img
+                src="/src/img/user-1.jpg"
+                alt=""
+                class="testimonial__photo"
+              />
               <h6 class="testimonial__name">Jared Ainsworth</h6>
               <p class="testimonial__location">Houston, Texas</p>
             </address>
@@ -226,14 +251,16 @@
 
         <div class="slide slide--2">
           <div class="testimonial">
-            <h5 class="testimonial__header">
-              Dependable
-            </h5>
+            <h5 class="testimonial__header">Dependable</h5>
             <blockquote class="testimonial__text">
               Always a good job.
             </blockquote>
             <address class="testimonial__author">
-              <img src="/src/img/user-2.jpg" alt="" class="testimonial__photo" />
+              <img
+                src="/src/img/user-2.jpg"
+                alt=""
+                class="testimonial__photo"
+              />
               <h6 class="testimonial__name">Sleepy S</h6>
               <p class="testimonial__location">Houston, Texas</p>
             </address>
@@ -242,14 +269,16 @@
 
         <div class="slide slide--3">
           <div class="testimonial">
-            <h5 class="testimonial__header">
-              Affordable
-            </h5>
+            <h5 class="testimonial__header">Affordable</h5>
             <blockquote class="testimonial__text">
               Very good service all the time and at a good price👍👍👍
             </blockquote>
             <address class="testimonial__author">
-              <img src="/src/img/user-3.jpg" alt="" class="testimonial__photo" />
+              <img
+                src="/src/img/user-3.jpg"
+                alt=""
+                class="testimonial__photo"
+              />
               <h6 class="testimonial__name">Antonio Alvarez</h6>
               <p class="testimonial__location">Houston, Texas</p>
             </address>
@@ -258,14 +287,16 @@
 
         <div class="slide slide--4">
           <div class="testimonial">
-            <h5 class="testimonial__header">
-              Our priority is you
-            </h5>
+            <h5 class="testimonial__header">Our priority is you</h5>
             <blockquote class="testimonial__text">
               Great staff, friendly and attentive
             </blockquote>
             <address class="testimonial__author">
-              <img src="/src/img/user-2.jpg" alt="" class="testimonial__photo" />
+              <img
+                src="/src/img/user-2.jpg"
+                alt=""
+                class="testimonial__photo"
+              />
               <h6 class="testimonial__name">Latrica Nicholson</h6>
               <p class="testimonial__location">Houston, Texas</p>
             </address>
@@ -315,7 +346,7 @@
           <a class="footer__link" href="#">Contact Us</a>
         </li>
       </ul>
-      <img src="/src/img/logo-1.png" alt="Logo" class="footer__logo" />
+      <img src="/src/img/logo-1.jpg" alt="Logo" class="footer__logo" />
       <p class="footer__copyright">
         &copy; Copyright by
         <a
