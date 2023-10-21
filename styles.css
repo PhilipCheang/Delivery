@@ -98,6 +98,7 @@ body {
 
 p {
   color: #666;
+  font-size: 2.2rem;
 }
 
 /* This is BAD for accessibility! Don't do in the real world! */
@@ -172,7 +173,6 @@ img {
 
 /* HEADER */
 .header {
-  padding: 0 3rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -181,9 +181,9 @@ img {
 .header__title {
   flex: 1;
 
-  max-width: 115rem;
+  max-width: 125rem;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2.8fr 2.2fr;
   row-gap: 3rem;
   align-content: center;
   justify-content: center;
@@ -207,7 +207,6 @@ h4 {
   grid-column: 2 / 3;
   grid-row: 1 / span 4;
   transform: translateY(-6rem);
-  padding-left: 10px;
 }
 
 /* .hero {
@@ -245,8 +244,8 @@ h4 {
 .features {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin: 0 12rem;
+  gap: 3rem;
+  margin: 0 3rem;
 }
 
 .features__img {
@@ -256,7 +255,7 @@ h4 {
 .features__feature {
   align-self: center;
   justify-self: center;
-  width: 70%;
+  width: 90%;
   font-size: 1.5rem;
 }
 
@@ -701,6 +700,11 @@ h4 {
 #check {
   display: none;
 }
+@media (min-width: 1369px) {
+  .header__title {
+    max-width: 93%;
+  }
+}
 
 @media (max-width: 952px) {
   .nav {
@@ -712,6 +716,9 @@ h4 {
 }
 /* mobile menu display */
 @media (max-width: 858px) {
+  .nav.sticky {
+    padding: 0 3rem 0 3rem;
+  }
   .checkbtn {
     display: block;
   }
@@ -764,27 +771,43 @@ h4 {
     margin-top: 60px;
     padding: 0;
   }
+  .features {
+    gap: 1rem;
+    margin: 0;
+  }
+  .features__feature {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 665px) {
+  .header {
+    padding: 0 2rem;
+  }
   .nav {
     padding: 0;
   }
   #logo {
     padding-left: 0;
   }
+  .nav.sticky {
+    padding: 0 2rem 0 2rem;
+  }
   .section {
     padding: 2rem;
   }
   .header__title {
-    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-content: center;
+    justify-content: center;
   }
-  .hero {
-    display: block;
-  }
-
   .header__img {
-    height: 60vh;
+    height: 40rem;
+  }
+  .section__description {
+    padding: 5rem 0 2rem 0;
   }
   .features__icon {
     display: none;
