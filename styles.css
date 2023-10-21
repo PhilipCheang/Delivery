@@ -773,18 +773,39 @@ h4 {
   #logo {
     padding-left: 0;
   }
+  .section {
+    padding: 2rem;
+  }
+  .header__title {
+    padding-bottom: 0;
+  }
   .hero {
     display: block;
   }
+
   .header__img {
-    height: 40vh;
+    height: 60vh;
+  }
+  .features__icon {
+    display: none;
   }
   .features {
-    display: block;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     margin: 0;
   }
-
+  .store {
+    order: -3;
+  }
+  .family {
+    order: -2;
+  }
+  .experience {
+    order: 0;
+  }
+  .equipment {
+    order: -1;
+  }
   .features__img,
   .features__feature {
     width: 100%; /* Ensure full width on mobile */
